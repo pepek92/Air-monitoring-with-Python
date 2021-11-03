@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename= 'styles.css') }}"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<title>sensorin data</title>
+</head>
+<body href="{{ url_for('index') }}">
+<h1>
+    Humidity & Temperature
+</h1>
+<table style="float: left">
+    <thead>
+      <tr>
+        <th>Temperature</th>     
+    </tr>
+      </thead>    
+      <tbody>
+        {% for row in temp %}    
+            <tr>
+                <td>{{row[0]}}</td>
+            </tr>
+        {% endfor %}
+      </tbody>    
+  </table>
+  <table style="float: left">
+    <thead>
+      <tr>
+        <th>Humidity</th>     
+    </tr>
+      </thead>    
+      <tbody>
+        {% for row in hum %}    
+            <tr>
+                <td>{{row[0]}}</td>
+            </tr>
+        {% endfor %}
+      </tbody>    
+  </table>
+  <table style="float: left">
+    <thead>
+      <tr>
+        <th>Date</th>     
+    </tr>
+      </thead>    
+      <tbody>
+        {% for row in date %}    
+            <tr>
+                <td>{{row[0]}}</td>
+            </tr>
+        {% endfor %}
+      </tbody>    
+  </table>
+  <table style="float: left">
+    <thead>
+      <tr>
+        <th>Time</th>     
+    </tr>
+      </thead>    
+      <tbody>
+        {% for row in time %}    
+            <tr>
+                <td>{{row[0]}}</td>
+            </tr>
+        {% endfor %}
+      </tbody>    
+  </table>
+
+</body>
+</html> 

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+h1 {
+	font-family: Arial;
+	font-size: 60px;
+	text-align: center;
+	position: sticky;
+}
+
+body {
+	background-color:#DCDCDC ;
+	font-family: Arial;
+	font-size: 60 px;
+	text-align: center;
+	
+}
+
+.center{
+	margin-left: auto;
+	margin-right: auto;
+  }
+
